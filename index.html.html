@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Physique avec Professeur</title>
+
+<style>
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+.resources{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.btn-resource{
+    background:white;
+    color:#0f172a;
+    text-decoration:none;
+    padding:18px 25px;
+    border-radius:15px;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.btn-resource:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(37,99,235,0.25);
+}
+.bac-menu{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.bac-card{
+    width:260px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.bac-card:hover{
+    transform:translateY(-10px);
+}
+
+.bac-card span{
+    font-size:50px;
+}
+
+.bac-card h3{
+    margin-top:15px;
+}
+
+.bac-card p{
+    color:gray;
+    margin-top:10px;
+}
+.courses-grid{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.course-card{
+    background: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.course-card h3{
+    margin-bottom: 10px;
+}
+
+.course-card p{
+    margin-bottom: 25px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+body{
+    background:#f5f7fa;
+}
+
+nav{
+    background:#0f172a;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1532094349884-543bc11b234d');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.section{
+    padding:70px 10%;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Physique Pro</div>
+
+    <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Cours</a></li>
+        <li><a href="#">Exercices</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div>
+        <h1>Physique & Chimie</h1>
+        <p>Cours, exercices corrigés et préparation aux examens</p>
+        <a href="#" class="btn">Commencer</a>
+    </div>
+</section>
+<section class="section">
+    <h2>Nos Cours</h2>
+
+    <div class="courses-grid">
+
+        <div class="course-card">
+            <h3>1ère BAC SM</h3>
+            <p>Cours complets avec exercices.</p>
+            <a href="1bacsm.html" class="btn">Accéder</a>
+        </div>
+
+        <div class="course-card">
+            <h3>2ème BAC PC</h3>
+            <p>Préparation au national.</p>
+            <a href="2bacpc.html" class="btn">Accéder</a>
+        </div>
+
+        <div class="course-card">
+            <h3>2ème BAC SM</h3>
+            <p>Résumé et séries d'exercices.</p>
+            <a href="2bacsm.html" class="btn">Accéder</a>
+        </div>
+
+    </div>
+</section>
+<div style="text-align:center; margin:30px;">
+
+<a href="https://wa.me/212707715551"
+target="_blank"
+style="background:#25D366;color:white;padding:12px 20px;text-decoration:none;border-radius:8px;">
+WhatsApp
+</a>
+
+<a href="https://instagram.com/monsieur_le_noir"
+target="_blank"
+style="background:#E1306C;color:white;padding:12px 20px;text-decoration:none;border-radius:8px;margin-left:10px;">
+Instagram
+</a>
+
+</div>
+<footer>
+    © 2026 Tous droits réservés
+</footer>
+
+
+    </div>
+</section>
+</section>
+<section class="section" id="2bacpc">
+
+    <div class="bac-menu">
+
+    <div class="bac-card">
+        <span>📚</span>
+        <h3>Cours PDF</h3>
+        <p>Tous les cours du programme</p>
+    </div>
+
+    <div class="bac-card" onclick="toggleVideos()">
+        <span>🎥</span>
+        <h3>Vidéos YouTube</h3>
+        <p>Explications détaillées</p>
+    </div>
+
+    <div class="bac-card">
+        <span>📝</span>
+        <h3>Exercices Corrigés</h3>
+        <p>Séries et examens</p>
+    </div>
+
+</div>
+<div id="videos-list" style="display:none; margin-top:20px;">
+
+    <a href="https://youtube.com/..." target="_blank">📹 Leçon 1</a><br><br>
+
+    <a href="https://youtube.com/..." target="_blank">📹 Leçon 2</a><br><br>
+
+    <a href="https://youtube.com/..." target="_blank">📹 Leçon 3</a><br><br>
+
+    <a href="https://youtube.com/..." target="_blank">📹 Leçon 4</a><br><br>
+
+    <a href="https://youtube.com/..." target="_blank">📹 Leçon 5</a><br><br>
+
+    <a href="https://youtube.com/..." target="_blank">📹 Leçon 6</a><br><br>
+
+    <a href="https://youtube.com/..." target="_blank">📹 Leçon 7</a><br><br>
+
+    <a href="https://youtube.com/..." target="_blank">📹 Leçon 8</a><br><br>
+
+    <a href="https://youtube.com/..." target="_blank">📹 Leçon 9</a><br><br>
+
+    <a href="https://youtube.com/..." target="_blank">📹 Leçon 10</a>
+
+</div>
+
+</div>
+</div>
+</section>
+<script>
+function toggleVideos() {
+    let videos = document.getElementById("videos-list");
+
+    if (videos.style.display === "none") {
+        videos.style.display = "block";
+    } else {
+        videos.style.display = "none";
+    }
+}
+</script>
+<script>
+function toggleVideos() {
+    let videos = document.getElementById("videos-list");
+
+    if (videos.style.display === "none") {
+        videos.style.display = "block";
+    } else {
+        videos.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
